@@ -5,6 +5,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { BsBell } from "react-icons/bs";
 import { FaRegUserCircle } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -29,13 +30,16 @@ const Navbar: React.FC = () => {
               </span>
             </div>
           </Link>
-          <div className="flex gap-2">
+          <div className="md:flex gap-2 hidden">
             <Input placeholder="Search" />
             <Button className="bg-green-500 hover:bg-green-600">Search</Button>
           </div>
         </div>
 
         <div className="flex gap-4 items-center">
+          <div className="md:hidden flex items-center">
+            <FaSearch />
+          </div>
           <Link href="/">
             <BsBell className="text-xl" />
           </Link>
