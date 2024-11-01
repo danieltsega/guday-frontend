@@ -17,8 +17,8 @@ import {
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="fixed w-full flex justify-center items-center min-h-[52px] md:h-auto px-3 md:px-3 xl:px-0 xl:pr-3 pt-2 pb-1 shadow bg-green-50 z-50">
-      <div className="flex justify-between items-center gap-4 w-[907px] h-full py-2">
+    <nav className="fixed w-full flex justify-center items-center min-h-[52px] md:h-auto px-2 md:px-0  xl:px-0  pt-2 pb-1 shadow bg-green-50 z-50 md:mb-14">
+      <div className="flex md:max-w-4xl mx-auto justify-between items-center gap-4 w-[907px] h-full py-2 ">
         <div className="flex gap-[4rem]">
           <Link href="/">
             <div className="flex items-center">
